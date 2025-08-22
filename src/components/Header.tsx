@@ -23,9 +23,9 @@ const Header = () => {
             <div className="w-8 h-8 md:w-10 md:h-10 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg flex items-center justify-center transform hover:scale-110 transition-transform duration-300">
               <span className="text-white font-bold text-lg md:text-xl">VG</span>
             </div>
-            <div className="hidden sm:block">
-              <h1 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">Varnam Granites</h1>
-              <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 transition-colors duration-300">Crafting Excellence in Stone</p>
+            <div className="block">
+              <h1 className="text-base sm:text-lg md:text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">Varnam Granites</h1>
+              <p className="text-xs md:text-sm text-gray-600 dark:text-gray-300 transition-colors duration-300 hidden sm:block">Crafting Excellence in Stone</p>
             </div>
           </Link>
 

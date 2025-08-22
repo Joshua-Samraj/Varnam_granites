@@ -16,18 +16,20 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setIsDark(savedTheme === 'dark');
-    } else {
+  // Initialize theme from localStorage or system preference
+  const [isDark, setIsDark] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        return savedTheme === 'dark';
+      }
       // Check system preference
-      setIsDark(window.matchMedia('(prefers-color-scheme: dark)').matches);
+      return window.matchMedia('(prefers-color-scheme: dark)').matches;
     }
-  }, []);
+    return false;
+  });
 
+  // Apply theme to document on mount and when theme changes
   useEffect(() => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     if (isDark) {
