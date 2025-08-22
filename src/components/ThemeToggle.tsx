@@ -11,17 +11,15 @@ const ThemeToggle = () => {
       aria-label="Toggle theme"
     >
       <div className="relative w-6 h-6">
-        <Sun 
-          size={24} 
-          className={`absolute inset-0 text-yellow-500 transition-all duration-500 transform ${
-            isDark ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'
-          }`}
+        <Sun
+          size={24}
+          className={`absolute inset-0 text-yellow-500 transition-all duration-500 transform ${isDark ? 'rotate-90 scale-0 opacity-0' : 'rotate-0 scale-100 opacity-100'
+            }`}
         />
-        <Moon 
-          size={24} 
-          className={`absolute inset-0 text-blue-400 transition-all duration-500 transform ${
-            isDark ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'
-          }`}
+        <Moon
+          size={24}
+          className={`absolute inset-0 text-blue-400 transition-all duration-500 transform ${isDark ? 'rotate-0 scale-100 opacity-100' : '-rotate-90 scale-0 opacity-0'
+            }`}
         />
       </div>
     </button>

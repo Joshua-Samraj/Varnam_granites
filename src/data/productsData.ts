@@ -43,8 +43,10 @@ export const products: Product[] = [
         category: "Granite",
         image: "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop",
         gallery: [
+            "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
+            "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
             "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-        ],
+        ],  
         description: "Stunning black granite with golden speckles that shimmer like stars in the night sky.",
         price: "From $35/sq ft",
         rating: 4.9,
@@ -95,9 +97,9 @@ export const products: Product[] = [
         id: 5,
         name: "Calacatta Quartz",
         category: "Quartz",
-        image: "https://images.pexels.com/photos/1571480/pexels-photo-1571480.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop",
+        image: "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
         gallery: [
-            "https://images.pexels.com/photos/1571480/pexels-photo-1571480.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+            "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
         ],
         description: "Engineered quartz with dramatic white and gold veining inspired by natural Calacatta marble.",
         price: "From $55/sq ft",
@@ -113,9 +115,9 @@ export const products: Product[] = [
         id: 6,
         name: "Emperador Dark Marble",
         category: "Marble",
-        image: "https://images.pexels.com/photos/1571485/pexels-photo-1571485.jpeg?auto=compress&cs=tinysrgb&w=500&h=400&fit=crop",
+        image: "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop",
         gallery: [
-            "https://images.pexels.com/photos/1571485/pexels-photo-1571485.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+           "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
         ],
         description: "Rich brown marble with distinctive white and light brown veining, adding warmth to any space.",
         price: "From $50/sq ft",
@@ -126,5 +128,5 @@ export const products: Product[] = [
         thickness: ["2cm", "3cm"],
         applications: ["Feature Walls", "Bathroom Vanities", "Flooring", "Decorative Elements"],
         features: ["Rich Color", "Distinctive Veining", "Luxury Appeal", "Warm Tones"]
-    }
+    },
 ];
